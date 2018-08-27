@@ -1,6 +1,7 @@
 package main;
 
 
+import controller.AddNewVolunteerServlet;
 import controller.IncomingCallServlet;
 import model.Pensioner;
 import org.eclipse.jetty.servlet.ServletHolder;
@@ -36,11 +37,13 @@ public class Main {
         BotStarter.startBot();
         DbHelper dbHelper = new DbHelper();
         PensionerService pensionerService = new PensionerServiceImpl();
+        VolunteerService volunteerService = new VolunteerServiceImpl();
 //        pensionerService.addPensioner(new Pensioner("","","","Москва Ленина 50",
 //                "89854859568", "скорая"));
 
         ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
         context.addServlet(new ServletHolder(new IncomingCallServlet()), "/phone");
+        context.addServlet(new ServletHolder(new AddNewVolunteerServlet(volunteerService)), "/formaction");
 
 
         ResourceHandler resource_handler = new ResourceHandler();
