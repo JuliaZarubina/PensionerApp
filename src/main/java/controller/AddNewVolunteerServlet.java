@@ -25,6 +25,7 @@ public class AddNewVolunteerServlet extends HttpServlet {
             String lastName = request.getParameter("lastname");
             String age = request.getParameter("age");
             String phone = request.getParameter("phone");
+            String id = request.getParameter("id");
             long chatId = 0;
 
 
@@ -38,7 +39,12 @@ public class AddNewVolunteerServlet extends HttpServlet {
             response.setContentType("text/html;charset=utf-8");
          //   response.setCharacterEncoding("UTF-8");
             response.getWriter().println(json);
-            response.sendRedirect("https://t.me/pensooo_bot?start");
+            response.sendRedirect("https://t.me/pens000_bot?start");
     }
+
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String id = req.getParameter("id");
     }
+}
 

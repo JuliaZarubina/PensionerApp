@@ -44,8 +44,8 @@ public class DbHelper {
         configuration.setProperty("hibernate.connection.url", "jdbc:mysql://localhost:3306/db_example");
 //        configuration.setProperty("hibernate.connection.url", "jdbc:mysql://146.120.82.46:3306/pensioner_db");
 //        configuration.setProperty("hibernate.connection.verifyServerCertificate", "false");
-        configuration.setProperty("hibernate.connection.requireSSL", "false");
-        configuration.setProperty("hibernate.connection.useSSL", "false");
+ //       configuration.setProperty("hibernate.connection.requireSSL", "false");
+  //      configuration.setProperty("hibernate.connection.useSSL", "false");
         configuration.setProperty("hibernate.connection.username", "root");
         configuration.setProperty("hibernate.connection.password", "kbwtbcn12");
         configuration.setProperty("hibernate.show_sql", hibernate_show_sql);
