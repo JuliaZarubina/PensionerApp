@@ -186,12 +186,12 @@ public class SimpleBot extends TelegramLongPollingBot {
 
     @Override
     public String getBotUsername() {
-        return "Pensooo_bot";
+        return "Pens000_bot";
     }
 
     @Override
     public String getBotToken() {
-        return "692766715:AAGtc_qrrSs-0YIH4H8cnvX_Fl8WXA6jK8A";
+        return "629009681:AAGq2i3RoZdG8DQjHOvaSSI2ASJJf2cjJDg";
     }
 
 }
