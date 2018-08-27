@@ -13,13 +13,13 @@ public class User implements Serializable { // Serializable Important to Hiberna
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @Column(name = "name", unique = false, updatable = false)
+    @Column(name = "name", unique = false, updatable = true)
     private String name;
 
-    @Column(name = "lastName", unique = false, updatable = false)
+    @Column(name = "lastName", unique = false, updatable = true)
     private String lastName;
 
-    @Column(name = "age", unique = false, updatable = false)
+    @Column(name = "age", unique = false, updatable = true)
     private String age;
 
     //Important to Hibernate!
